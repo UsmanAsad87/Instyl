@@ -1,6 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:instyl/screens/add_post_screen.dart';
 import 'package:instyl/screens/home_screen.dart';
+import 'package:instyl/screens/inbox_page.dart';
+import 'package:instyl/screens/instyl_shop_page.dart';
+import 'package:instyl/screens/profile_screen.dart';
 
 import '../constants.dart';
 
@@ -54,10 +58,10 @@ class _MainMenuState extends State<MainMenu> {
         onPageChanged: onPageChanged,
         children: const [
           HomeScreen(),
-          Center(child: Text('1')),
-          Center(child: Text('2')),
-          Center(child: Text('3')),
-          Center(child: Text('4')),
+          InboxPageScreen(),
+          AddPostScreen(),
+          InstylShopPageScreen(),
+          ProfileScreen(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(

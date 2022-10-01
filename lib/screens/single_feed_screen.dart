@@ -5,16 +5,16 @@ import 'package:instyl/widgets/custom_text_field.dart';
 import 'package:transparent_image/transparent_image.dart';
 import '../constants.dart';
 
-class FeedScreen extends StatefulWidget {
+class SingleFeedScreen extends StatefulWidget {
   static const routeName = '/feed_screen';
   final String imgUrl;
-  const FeedScreen({Key? key, required this.imgUrl}) : super(key: key);
+  const SingleFeedScreen({Key? key, required this.imgUrl}) : super(key: key);
 
   @override
-  State<FeedScreen> createState() => _FeedScreenState();
+  State<SingleFeedScreen> createState() => _SingleFeedScreenState();
 }
 
-class _FeedScreenState extends State<FeedScreen> {
+class _SingleFeedScreenState extends State<SingleFeedScreen> {
   final TextEditingController _commentController = TextEditingController();
 
   @override

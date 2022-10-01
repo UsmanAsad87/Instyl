@@ -7,7 +7,7 @@ import '../constants.dart';
 
 import 'package:flutter/foundation.dart' show kIsWeb;
 
-import 'feed_screen.dart';
+import 'single_feed_screen.dart';
 
 class ReelsScreen extends StatefulWidget {
   static const routeName = '/feeds_screen';
